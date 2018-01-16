@@ -1,0 +1,91 @@
+body{
+  border: 7px solid #494C4E;
+  margin: 0px;
+  color: #494C4E;
+  font-family: 'Varela Round', sans-serif;
+}
+#content{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  margin: 0 auto;
+  position:relative;
+  grid-template-areas:
+  ". label . . . nav nav ."
+  ". about about about about about about . "
+  "imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner"
+  ". section section section section section section ."
+  "contact contact contact contact contact contact contact contact"
+  " . . . email email . . ."
+  "footer footer footer footer footer footer footer footer ";
+}
+@media screen and (min-width: 760px){
+  #content{
+
+    grid-template-areas:
+    ". label . . . nav nav ."
+    ". . about about about about . . "
+    ". imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner ."
+    ". . section section section section . ."
+    ". contact contact contact contact contact contact ."
+    " . . . email email . . ."
+    "footer footer footer footer footer footer footer footer ";
+  }
+}
+a {
+  color: #494C4E;
+}
+ptitle{
+  /* color: #e9c893; */
+  color: #f7ce3e;
+}
+.label{
+  font-family: 'Marck Script', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  grid-area: label;
+  text-align: center;
+  margin-top: 20px;
+}
+.label a{
+  text-decoration: none;
+}
+.nav{
+  grid-area: nav;
+  text-align: center;
+  margin-top: 20px;
+}
+.nav a{
+  display: inline;
+  margin: 20px;
+  text-decoration: none;
+}
+.about{
+  grid-area: about;
+}
+.imgBanner{
+  grid-area: imgBanner;
+}
+.imgBanner img{
+  width:100%;
+  height:100%;
+}
+.section{
+  grid-area: section;
+}
+.contact{
+  grid-area: contact;
+  text-align: center;
+}
+.email{
+  grid-area: email;
+  text-align: center;
+}
+.email a{
+  text-decoration: none;
+}
+.footer{
+  grid-area: footer;
+  text-align: center;
+}
