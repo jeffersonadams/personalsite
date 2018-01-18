@@ -19,14 +19,22 @@ body{
   "contact contact contact contact contact contact contact contact"
   " . . . email email . . ."
   "footer footer footer footer footer footer footer footer "; */
-  ". . . label label . . ."
-  "nav nav nav nav nav nav nav nav"
-  ". about about about about about about . "
-  "imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner"
-  ". section section section section section section ."
-  "contact contact contact contact contact contact contact contact"
-  " . . . email email . . ."
-  "footer footer footer footer footer footer footer footer ";
+}
+@media screen and (max-width: 759px){
+  #content{
+    grid-template-areas:
+    ". . . label label . . ."
+    "nav nav nav nav nav nav nav nav"
+    ". about about about about about about . "
+    "imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner"
+    ". section section section section section section ."
+    "contact contact contact contact contact contact contact contact"
+    " . . . email email . . ."
+    "footer footer footer footer footer footer footer footer ";
+  }
+  .label{
+    font-size: 60px;
+  }
 }
 @media screen and (min-width: 760px){
   #content{
@@ -50,7 +58,7 @@ ptitle{
 }
 .label{
   font-family: 'Marck Script', cursive;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
   grid-area: label;
   text-align: center;
