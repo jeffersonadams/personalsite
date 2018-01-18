@@ -35,6 +35,9 @@ body{
   .label{
     font-size: 60px;
   }
+  .about{
+    text-align: center;
+  }
 }
 @media screen and (min-width: 760px){
   #content{
@@ -67,6 +70,9 @@ ptitle{
 .label a{
   text-decoration: none;
 }
+.label a:hover{
+  color: #f7ce3e;
+}
 .nav{
   grid-area: nav;
   text-align: center;
@@ -76,6 +82,9 @@ ptitle{
   display: inline;
   margin: 20px;
   text-decoration: none;
+}
+.nav a:hover{
+  color: #f7ce3e;
 }
 .about{
   grid-area: about;
@@ -97,9 +106,19 @@ ptitle{
 .email{
   grid-area: email;
   text-align: center;
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  border: 3px solid #fff;
+}
+.email:hover{
+  border-radius: 10px 10px 10px 10px;
+  border: 3px solid #f7ce3e;
 }
 .email a{
   text-decoration: none;
+}
+.email a:hover{
+  color: #f7ce3e;
 }
 .footer{
   grid-area: footer;
