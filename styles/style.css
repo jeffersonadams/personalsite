@@ -29,7 +29,7 @@ body{
     "imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner"
     ". section section section section section section ."
     "contact contact contact contact contact contact contact contact"
-    " . . . email email . . ."
+    "email email email email resume resume resume resume"
     "footer footer footer footer footer footer footer footer ";
   }
   .label{
@@ -48,7 +48,7 @@ body{
     ". imgBanner imgBanner imgBanner imgBanner imgBanner imgBanner ."
     ". . section section section section . ."
     ". contact contact contact contact contact contact ."
-    " . . . email email . . ."
+    " . . email email resume resume . ."
     "footer footer footer footer footer footer footer footer ";
   }
 }
@@ -109,15 +109,36 @@ ptitle{
   margin: 10px;
   border-radius: 10px 10px 10px 10px;
   border: 3px solid #fff;
+  padding: 10px;
 }
 .email:hover{
   border-radius: 10px 10px 10px 10px;
   border: 3px solid #f7ce3e;
+  color: #f7ce3e;
 }
 .email a{
   text-decoration: none;
 }
 .email a:hover{
+  color: #f7ce3e;
+}
+.resume{
+  grid-area: resume;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  border: 3px solid #fff;
+  padding: 10px;
+}
+.resume:hover{
+  border-radius: 10px 10px 10px 10px;
+  border: 3px solid #f7ce3e;
+  color: #f7ce3e;
+}
+.resume a{
+  text-decoration: none;
+}
+.resume a:hover{
   color: #f7ce3e;
 }
 .footer{
